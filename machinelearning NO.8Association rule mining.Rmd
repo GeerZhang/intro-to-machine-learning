@@ -1,0 +1,34 @@
+---
+title: "machine learning exercise NO.8 Association rule mining"
+author: "Yolanda Cheung/Geer Zhang"
+date: "8/14/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Association rule mining
+```{r, echo=FALSE}
+library(arules)
+library(arulesViz)
+groceries <- read.transactions("~/Desktop/groceries.txt", sep = ",")
+itemFrequencyPlot(groceries, topN = 10)
+rules <- apriori(groceries, parameter = list(support = 0.01, confidence = 0.5, minlen = 2))
+rules <- sort(rules, by = "lift")
+inspect(head(rules))
+plot(rules)
+
+```
+**This analysis delves into a dataset containing shopping transactions from a grocery store. By examining this dataset, we aim to uncover patterns and relationships between different items that customers tend to purchase together.**
+
+**1. Understanding the Most Popular Items:Initially, we visualized the 10 most frequently purchased items. This gave us an immediate understanding of the core items that drive customers to the store. These could be staple items that every household commonly needs or special items that are unique to this grocery store.**
+
+**2. Discovering Shopping Patterns with Association Rules: We applied the Apriori algorithm, a prominent method for finding items that are often purchased together. For instance, if bread and butter frequently appear in the same transaction, the algorithm will recognize this pattern.To ensure the quality and relevance of our findings, we focused on patterns that appear in at least 1% of all transactions (support) and have at least 50% likelihood that if a customer buys item A, they will also buy item B (confidence).**
+
+**3. Prioritizing the Most Relevant Patterns:After extracting potential shopping patterns, we ranked them by their 'lift' value. Lift indicates the strength of a rule over random co-occurrence. For instance, a lift value greater than 1 for the bread and butter rule would indicate that bread and butter are purchased together more frequently than if the two items were bought independently.**
+
+**4. Visual Representation for Clearer Insights:Lastly, we visualized these associations, providing a clear, visual representation of the relationships between products. Such a scatter plot allows stakeholders to immediately identify the strongest associations without delving into the numbers.**
+
+**In summary, by analyzing the shopping transactions, we've gained insights into the most popular items and the relationships between products. Such insights can drive marketing strategies, optimize store layout, and even influence inventory decisions.**
