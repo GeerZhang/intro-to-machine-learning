@@ -10,4 +10,6 @@ pdf version：https://github.com/GeerZhang/intro-to-machine-learning/blob/main/m
 r code：https://github.com/GeerZhang/intro-to-machine-learning/blob/2104bff092b9786a0fc5849c8a8973d4e36a1581/machinelearning%20NO.8Association%20rule%20mining.Rmd
 
 ## The rest of the exercise
-https://github.com/GeerZhang/intro-to-machine-learning/blob/2104bff092b9786a0fc5849c8a8973d4e36a1581/exercise%20machine%20learning.ipynb
+original version：https://github.com/GeerZhang/intro-to-machine-learning/blob/2104bff092b9786a0fc5849c8a8973d4e36a1581/exercise%20machine%20learning.ipynb
+
+version2：https://github.com/GeerZhang/intro-to-machine-learning/blob/5aa634cb9766a76d62e79c2533cda7fbd97a0d99/version2exercise.ipynb
