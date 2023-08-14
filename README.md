@@ -1,7 +1,7 @@
 # Intro-to-machine-learning
 Yolanda Cheung/Geer Zhang
 ## Probability practice
-[probability practice]((https://github.com/GeerZhang/intro-to-machine-learning/blob/632797cc526b003cf4c41dfa9847f8f3162a9460/Probability%20practice.pdf))
+[probability practice] (https://github.com/GeerZhang/intro-to-machine-learning/blob/632797cc526b003cf4c41dfa9847f8f3162a9460/Probability%20practice.pdf)
 https://github.com/GeerZhang/intro-to-machine-learning/blob/632797cc526b003cf4c41dfa9847f8f3162a9460/Probability%20practice.pdf
 
 ## Association rule mining
